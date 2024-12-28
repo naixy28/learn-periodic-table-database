@@ -1,0 +1,126 @@
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+ls --color=auto
+cat coderoad.yaml
+ls --color=auto
+clear
+mkdir periodic_table
+cd periodic_table/
+git init
+git branch
+git checkout -b main
+git brach
+git branch
+git status
+git branch --list
+git checkout main
+git branch --help
+__vsc_prompt_cmd_original
+git add .
+git status
+git commit -m "initial commit"
+git branch
+touch element.sh
+git add .
+git commit -m 'init'
+git branch
+chmod +x element.sh
+cat element.sh
+echo
+cat element.sh
+echo test >> element.sh
+cat element.sh
+git add .
+git diff
+git status
+gti diff element.sh
+git diff element.sh
+git reset HEAD
+git status
+git diff
+git add .
+git commit -m "meg 1"
+git log
+git rebase --root
+git rebase --roo -it
+__vsc_prompt_cmd_original
+git rebase --root -i
+git status
+git status
+git rebase --root -i
+git log --oneline
+./element.sh
+./element.sh
+./element.sh
+./element.sh 1
+./element.sh 1
+./element.sh
+./element.sh
+./element.sh 1
+./element.sh 1 22 3
+./element.sh 1 "22"d 3
+./element.sh 1 "22" 3
+git add .
+git commit -m "feat: check input"
+./element.sh 1
+./element.sh 1
+./element.sh H
+./element.sh H
+./element.sh H
+./element.sh H
+./element.sh H
+./element.sh H
+./element.sh 0
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 100
+./element.sh h
+./element.sh n
+./element.sh n
+./element.sh nnit
+./element.sh nit
+./element.sh nitrogen
+./element.sh nitrogen
+./element.sh nitrogen
+./element.sh nitrogend
+./element.sh nitrogend
+./element.sh nitrogen
+./element.sh nitrogen
+git add .
+git commit -m "feat: can search and output"
+git log --oneline
+./element.sh
+./element.sh e
+git add .
+git commit -m "fix: error handler"
