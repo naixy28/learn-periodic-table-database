@@ -125,3 +125,7 @@ git log --oneline
 git add .
 git commit -m "fix: error handler"
 pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+cd..
+ls --color=auto
+cd ..
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
