@@ -124,3 +124,4 @@ git log --oneline
 ./element.sh e
 git add .
 git commit -m "fix: error handler"
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
